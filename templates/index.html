@@ -1,0 +1,21 @@
+{% extends "nav.html"%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+</head>
+<body>
+  <div>
+    {% block content %}
+    <h1>Welcome to my To Do app</h1>
+    <h2>To get started create an account or log in!</h2>
+    <p align="center"><a href=login ><button class=grey style="height:75px;width:150px">Login</button></a></p>
+    <p align="center"><a href=create_usr ><button class=grey style="height:75px;width:150px">Create an account</button></a></p>
+    <p>This is project is to learn, test and showcase. Do NOT input actual credentials. For security reasons, I reset the database every 24 hours.</p>
+    {% endblock %}
+  </div>
+  
+</body>
+</html>
